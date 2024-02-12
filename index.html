@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click</title>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            line-height: 160px;
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+
+<button id="myButton">Click me</button>
+<div id="myDiv">Hover me</div>
+
+<script>
+   
+    document.getElementById('myButton').addEventListener('click', function() {
+        alert('Button Clicked!');
+    });
+
+
+    // Mouse Over Mouse Out
+
+     var myDiv = document.getElementById('myDiv');
+
+    myDiv.addEventListener('mouseover', function() {
+    myDiv.style.backgroundColor = 'yellow';
+});
+
+myDiv.addEventListener('mouseout', function() {
+    myDiv.style.backgroundColor = 'pink';
+});
+</script>
+
+</body>
+</html>
